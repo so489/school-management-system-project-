@@ -1,0 +1,97 @@
+.diwali-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.diwali-popup {
+  background: linear-gradient(135deg, #ffcc00, #ff6600);
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  animation: popIn 0.8s ease-in-out;
+  border: 3px solid #fff;
+}
+
+.diwali-image {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+  animation: float 2s ease-in-out infinite;
+}
+
+.diwali-popup h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff6600;
+}
+
+.diwali-popup p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.offer-btn {
+  background: #fff;
+  color: #ff6600;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.offer-btn:hover {
+  background: #ff6600;
+  color: #fff;
+  box-shadow: 0 0 15px #fff;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+}
+
+/* ✨ Animations */
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}

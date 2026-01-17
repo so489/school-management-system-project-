@@ -1,0 +1,96 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.popup-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+  animation: slideUp 0.4s ease-in-out;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.2s;
+}
+.close-btn:hover {
+  color: red;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.popup-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.popup-form input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.popup-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.register-btn:hover {
+  background: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

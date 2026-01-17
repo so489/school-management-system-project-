@@ -1,0 +1,3 @@
+- [x] Add Role: Leader to Priyanshu Kumar Verma's card
+- [x] Add Role: Manager to Sonu Maurya's card
+- [x] Add Role: Developer to all other team members' cards

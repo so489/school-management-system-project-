@@ -1,0 +1,110 @@
+.admin-portal {
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  background: linear-gradient(135deg, #f0f4f8, #e3eaf2);
+  min-height: 100vh;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.admin-title {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 30px;
+}
+
+.admin-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.admin-tabs button {
+  background: #ffffff;
+  border: 2px solid #004aad;
+  color: #004aad;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.admin-tabs button:hover {
+  background: #004aad;
+  color: white;
+}
+
+.admin-tabs .active {
+  background: #004aad;
+  color: white;
+}
+
+.admin-content {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #004aad;
+}
+
+.login-btn {
+  background: #004aad;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: #003380;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-weight: 500;
+}

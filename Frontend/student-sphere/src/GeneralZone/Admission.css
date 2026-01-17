@@ -1,0 +1,61 @@
+.admission-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.admission-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #004aad;
+}
+
+.admission-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Grid layout for left-right alignment */
+.admission-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px; /* row-gap, column-gap */
+}
+
+.admission-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.admission-form input,
+.admission-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.admission-btn {
+  grid-column: 1 / span 2; /* button spans both columns */
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.admission-btn:hover {
+  background: #0056b3;
+}

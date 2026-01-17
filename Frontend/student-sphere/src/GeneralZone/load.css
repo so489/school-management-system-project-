@@ -1,0 +1,47 @@
+.load-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #004aad, #007bff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.loader {
+  text-align: center;
+}
+
+.load-gif {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  animation: pulse 6s infinite ease-in-out;
+}
+
+h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  animation: fadeText 1.5s infinite alternate;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+@keyframes fadeText {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}

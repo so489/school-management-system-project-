@@ -1,0 +1,129 @@
+.school-header {
+  width: 100%;
+  background: linear-gradient(135deg, #004aad, #007bff);
+  color: white;
+  padding: 10px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 1s ease-in-out;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.school-logo {
+  width: 55px;
+  height: 55px;
+}
+
+.school-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: yellow;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #fff;
+}
+
+/* Center Navigation Menu */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: yellow;
+  transition: 0.4s ease;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+.nav-menu a:hover {
+  color: #ffea00;
+  transform: scale(1.1);
+}
+
+/* Right Button */
+.join-btn {
+  background: yellow;
+  color: #004aad;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+  text-decoration: none;
+}
+
+.join-btn:hover {
+  background: #fff;
+  color: #007bff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #fff;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .nav-menu {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* ✨ Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

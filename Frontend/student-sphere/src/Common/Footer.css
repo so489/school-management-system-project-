@@ -1,0 +1,98 @@
+.school-footer {
+  background: linear-gradient(135deg, #004aad, #007bff);
+  color: white;
+  padding: 20px 20px 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.3);
+  animation: slideUp 1s ease-in-out;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  border-bottom: 2px solid yellow;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #ffea00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 5%;
+  padding: 10px;
+  transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2) rotate(360deg);
+  background: yellow;
+  color: #004aad;
+  box-shadow: 0 0 15px yellow;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fffbcc;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+}
+
+/* 🌟 Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

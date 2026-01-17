@@ -1,0 +1,133 @@
+.enquiry-page {
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.enquiry-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.enquiry-header h1 {
+  color: #004aad;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.enquiry-header p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.enquiry-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.enquiry-container:hover {
+  transform: translateY(-5px);
+}
+
+.enquiry-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #004aad;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  border: 1px solid #004aad;
+  box-shadow: 0 0 5px rgba(0, 74, 173, 0.3);
+  outline: none;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  background: linear-gradient(135deg, #004aad, #007bff);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #003580, #005ecb);
+  transform: scale(1.05);
+}
+
+/* Success Popup */
+.success-popup {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  animation: fadeInUp 0.6s ease-in-out;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .enquiry-container {
+    padding: 30px 20px;
+  }
+
+  .enquiry-header h1 {
+    font-size: 2rem;
+  }
+}
